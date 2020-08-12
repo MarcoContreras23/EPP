@@ -779,5 +779,175 @@ p {
 }
 /* End  Media Query For Desktop */
 
-/*cadrs*/
+/*cards*/
+.titulo{
+	position: absolute;
+	align-items: center;
+	padding: 50px 0 50px;
+	justify-content: center;
+	top: 0;
+}
 
+.logo{
+	display: none;
+}
+
+.contenedor{
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 50px 40px;
+	overflow: hidden;
+}
+.card{
+	display: flex;
+	justify-content: center;
+	align-items:center;
+	width: 660px;
+	padding: 50px  50px;
+}
+.maskBackground{
+	position: relative;
+	width: 50%;
+	height: 275px;
+	box-shadow: -15px 0 35px rgba(0, 0, 0, 0.1), 0 -15px 35px rgba(0, 0, 0, 0.1), 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.gradients{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	
+}
+.gradient{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	
+}
+.gradient[color="blue"]{
+	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);;
+}
+
+.logo{
+	position: absolute;
+	width: 100px;
+	left: 20px;
+	top:20px
+}
+
+.mask{
+	position: absolute;
+	top: 85px;
+	left: 15px;
+	font-size: 20rem;
+	text-transform: uppercase;
+	line-height: .9;
+	color: #fff;
+	opacity: .1;
+}
+.mascara{
+	position: absolute;
+	width: 115%;
+	bottom: 0;
+	right: 0;
+}
+
+.info{
+	width: 50%;
+	background-color: #fff;
+	z-index: 1;
+	padding: 50px 50px;
+	box-shadow: 15px 0 35px rgba(0, 0, 0, 0.1), 0 -15px 35px rgba(0, 0, 0, 0.1), 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+.maskName{
+	padding: 0 0 10px 0;
+}
+
+.maskName div{
+	display: flex;
+	align-items: center;
+}
+
+.maskName div .big{
+
+	margin-right: 10px;
+	font-size: 2rem;
+	color:#333;
+}
+
+.maskName div .new{
+
+	background-color:#29323c;
+	text-transform: uppercase;
+	color: #fff;
+	padding: 3px 10px;
+	border: 5px;
+}
+
+.maskName .small{
+	font-weight: 500;
+	color: #333;
+	margin-top: 3px;
+	text-transform: capitalize;
+}
+
+.maskName, .description{
+	border-bottom: 1px solid #dadada;
+}
+
+.description{
+	padding: 10px 0;
+}
+
+.cotizar{
+	padding-top: 15px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.buy{
+
+	padding: .7rem 1rem;
+	background-color: #29323c;
+	text-decoration: none;
+	color: #fff;
+	text-transform: uppercase;
+
+}
+
+@media (max-width:1070px){
+
+	.mascara{
+		width: 135%;
+	}
+}
+
+@media (max-width:1564px){
+
+	.contenedor{
+		flex-direction: column;
+	}
+
+	.card{
+		flex-direction: column;
+		width: 100%;
+	}
+
+	.card > div{
+		width: 100%;
+	}
+
+	.mascara{
+		width: 100%;
+		top:55%;
+		right: 2%;
+		transform: translateY(-50%);
+	}
+}
